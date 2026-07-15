@@ -1,0 +1,7 @@
+text-decoration: Text par line lagata ya remove karta hai.
+
+font-family: Font choose karta hai.
+font-size: Text ka size set karta hai.
+font-weight: Text ki thickness (bold/normal) set karta hai.
+font-style: Text ko italic ya normal banata hai.
+    
