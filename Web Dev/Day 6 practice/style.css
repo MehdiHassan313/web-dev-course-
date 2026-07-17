@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    background: #0a465a;
+}
+
+.container{
+    background-color: darkslategray;
+    border-radius: 30px;
+    padding: 15px 30px;
+} 
+
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn{
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+:hover abouta{
+    text-underline: 10px;
+}
