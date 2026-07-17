@@ -1,1 +1,56 @@
-pwd
+Day 10 – HTML/CSS Notes (Student Records List)
+
+1) HTML Structure
+- index.html me 3 main cheezen hain:
+  a) Page Title: <h1 class="student">
+  b) Left side: <div class="arif"> (student names ke spans)
+  c) Right side: <div class="login"> (record panel)
+
+2) Left Panel (arif)
+- <div class="arif"> ke andar multiple <span> hain.
+- Har span hover par animation deta hai:
+  - Odd spans: left move (-40%) + darkorange bg + shadow
+  - Even spans: right move (40%, 0) + darkslategrey bg
+- CSS pseudo selectors used:
+  - .arif span:nth-child(odd):hover
+  - .arif span:nth-child(even):hover
+
+3) Right Panel (login)
+- <div class="login"> me:
+  - Title: RECORD PORTEL
+  - Label: ENTER STUDENT NAME:
+  - Input: type="text"
+  - Buttons: SEARCH RECORD, ADD RECORD, DELETE RECORD
+  - Link: View All Records
+- Hover effect:
+  - .login:hover border add karta hai
+  - transform translateY(-5px) + rotate(2deg)
+
+4) Buttons Styling
+- All buttons ka base style:
+  - width, padding, border-radius, color: white
+  - background-color default: #34495e
+- Different colors via nth-child:
+  - button:nth-child(odd) => darkorange
+  - button:nth-child(even) => green
+
+5) Layout (body and .body)
+- body:
+  - background-color: darkgrey
+  - min-height: 100vh
+- .body:
+  - flex display
+  - justify-content: space-around
+  - align-items: flex-start
+  - wrap enabled with flex-wrap: wrap
+
+6) Important CSS Concepts used
+- Flexbox for layout (.body, .student, .arif, .login)
+- Hover effects (:hover)
+- nth-child selectors for alternating styles
+- Transforms (translate, rotate)
+- Box-shadow for depth on hover
+
+(If you want, main Day 10 ke HTML me JS bhi add karke search/add/delete ka actual working UI bana sakta hoon.)
+
+
