@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: fantasy;
+    font-size: 50px;
+    gap: 50px;
+}
+.icon{
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border-color: blue;
+    box-shadow: 0 0 30px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.txt{
+    background-color: brown;
+    border-radius: 25px 0  25px 0;
+    height: 100px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid rgb(255, 255, 255);
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.811);
+
+}
+i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

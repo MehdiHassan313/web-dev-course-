@@ -1,0 +1,8 @@
+Flux box
+    ontainer
+    display flex
+    justify-content center
+flex
+    display: flex → Flexbox start.
+    justify-content → Left ↔ Right.
+    align-items → Top ↕ Bottom.

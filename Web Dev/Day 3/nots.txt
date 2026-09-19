@@ -1,0 +1,38 @@
+Types of styling 
+internal css
+External css
+inline css
+
+1. Inline CSS
+
+Definition: CSS ko HTML tag ke andar style attribute me likhte hain.
+
+Syntax:
+
+<p style="color:red;">Hello</p>
+2. Internal CSS
+
+Definition: CSS ko HTML ke <head> section me <style> tag ke andar likhte hain.
+
+Syntax:
+
+<head>
+<style>
+p{
+  color:red;
+}
+</style>
+</head>
+3. External CSS
+
+Definition: CSS ko alag .css file me likhte hain aur HTML se link karte hain.
+
+HTML:
+
+<link rel="stylesheet" href="style.css">
+
+style.css:
+
+p{
+  color:red;
+}

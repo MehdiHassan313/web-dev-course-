@@ -1,0 +1,622 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+/* Navbar (Height Kam Karne Ke Liye Padding Reduced) */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 15px 40px; /* Vertical height kam kar di hai */
+    background-color: #f57b87;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.menu {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* Base Container (Dono taraf se barabar margin rakhega) */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    width: 100%;
+    background-color: #fe8995;
+    overflow: hidden;
+}
+
+
+
+/* Hero Content */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0 0 0; 
+    color: white;
+    font-size:xx-large
+}
+
+/* Left Text Area */
+.left {
+    flex: 1;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 50px;
+}
+
+.left h1 {
+    font-family: 'Arvo', serif;
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.left p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 420px;
+}
+
+/* Right Image Area */
+.right {
+    flex: 1;
+    display: flex;
+    size: 40px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.image-content, .right {
+    flex: 2; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+
+
+/* Button Styling */
+.btn {
+    background-color: white;
+    color: #2b3990;
+    width: 150px;
+    height: 42px;
+    border-radius: 90px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: rgb(225, 219, 219);
+}
+
+/* --- WHAT WE DO SECTION --- */
+.about {
+    width: 100%;
+    background-color: #ffffff; 
+    padding: 60px 0;
+}
+
+.about .container.two-col, 
+.about .two-col {
+    display: flex ;     
+    flex-direction: row;  
+    height: 380px;
+
+    align-items: center;           
+    justify-content: space-between;  
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Left Image Box styling */
+.about .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about .image img {
+    width: 500px; 
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Right Text Box styling */
+.about .text {
+    flex: 1;
+    max-width: 500px;
+    color: #333333;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .text h2 {
+    font-family: 'Arvo', serif;
+    font-size: 38px;
+    color: #282e54; 
+    margin-bottom: 15px;
+}
+
+.about .text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+.btn.pink {
+    background-color: #f16875; 
+    color: #ffffff;            
+    padding: 12px 32px;
+    border-radius: 30px;      
+    font-weight: 700;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Hover effect  */
+.btn.pink:hover {
+    background-color: #e05361; 
+}
+
+
+/*  PROGRAMS  */
+.programs{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #ffffff;
+    color: #333333;
+
+
+}
+.programs .container{
+    height: 400px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    background-color: #f37884;
+    /* justify-content: space-between;   */
+    align-items: center;
+    color: white;
+}
+.title h2{
+    font-size: 30px;
+}
+
+.programs .title{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.arrow-btn{
+    width: 48px;
+    height: 48px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.arrow-btn:hover{
+    background-color: white;
+    color: #f16875;
+}
+.container .cards{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.container .cards .card{
+    display: flex;
+    width: 200px;
+    height: 220px;
+    background-color: white;
+    color: black;
+    gap:    5px;
+    margin: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 10px;
+    margin-left: 1opx;
+}
+.programs .card h3 {
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    color: #f16875; 
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.programs .card p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #555555;
+    font-style: italic;
+}
+.programs .card .icon {
+    width: 70px;         
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.programs .card .icon img {
+    width: 100%;         
+    height: 100%;         
+    object-fit: contain;  
+    display: block;
+}
+
+      /* PART 2 STARTS HERE  */
+
+/* 1. Main Parent Container */
+.assessment {
+    display: flex  ;
+    width: 100%  ;
+    max-width: 100%  ;
+    margin: 0  ;
+    padding: 0  ;
+    box-sizing: border-box;
+}
+
+/* 2. Left Box (Exact 50%) */
+.assessment .left { 
+    flex: 1 1 50%  ; 
+    width: 50%  ;
+    max-width: 50%  ;
+    height: 500px;
+    background-color: #ed0924;
+    box-sizing: border-box;
+    opacity: 0.3;
+
+
+}
+
+/* 3. Right Box  */
+.assessment .right { 
+    color: white;
+    background-color: #f9808c;
+    width: 50%;
+    max-width: 50% ;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 100px;
+    gap:    20px;
+}
+.img4{
+    opacity: 100%;
+    height: 600px;
+
+}
+
+
+/* HISTORY */
+.history {
+    width: 100%;
+    background-color: #ffffff; 
+    padding: 60px 0;
+}
+
+
+.history .container, 
+.history .container  {
+    display: flex ;     
+    flex-direction: row;  
+    height: 380px;
+
+    align-items: center;           
+    justify-content: space-between;  
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Left Image Box styling */ 
+.history .container .imge {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.history .container .imge  {
+    width: 80px; 
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Right Text Box styling */
+.history .text {
+    flex: 1;
+    max-width: 500px;
+    color: #333333;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.history .text h2 {
+    font-family: 'Arvo', serif;
+    font-size: 38px;
+    color: #282e54; 
+    margin-bottom: 15px;
+}
+
+.history .text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+.btn.pink {
+    background-color: #f16875; 
+    color: #ffffff;            
+    padding: 12px 32px;
+    border-radius: 30px;      
+    font-weight: 700;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Hover effect  */
+.btn.pink:hover {
+    background-color: #e05361; 
+}
+
+   /* FEATURES   */
+
+
+.features {
+    width: 100% ;
+    padding: 70px 0 ;
+    
+}
+
+.features .containercards{
+    background-color: #f16875;
+    display: flex ;
+    flex-direction: row ;
+    justify-content: center ;
+    align-items: center ;
+    gap: 40px ;
+    height: 500px;
+    gap: 1px;
+    /* max-width: 1200px ; */
+    width: 100%;
+    margin: 0 auto;
+}
+.features .containercards .feature h3{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.features .containercards .feature p{
+    font-size: large;
+
+}
+
+/* Single Feature Card */
+.features .feature {
+    flex: 1  ;
+    display: flex  ;
+    flex-direction: column  ;
+    align-items: center  ;
+    text-align: center  ;
+    position: relative;
+}
+
+/* Image Box */
+.features .feature img {
+    width: 220px  ;
+    height: 220px  ;
+    border-radius: 50%  ;     
+    object-fit: cover  ;       
+    border: 6px solid #ffffff  ; 
+    margin-bottom: 20px  ;
+    box-border: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Headings & Text */
+.features .feature h3 {
+    font-family: 'Arvo', serif  ;
+    font-size: 22px  ;
+    color: #ffffff  ;
+    margin-bottom: 12px  ;
+}
+
+.features .feature p {
+    font-family: 'Open Sans', sans-serif  ;
+    font-size: 14px  ;
+    color: #ffffff  ;
+    font-style: italic  ;
+    line-height: 1.6  ;
+    max-width: 300px  ;
+}
+    /* neighborhood */
+.neighborhood .container{
+    background-color: #faf8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    height: 350px;
+    font-family: 'Arvo', serif,
+
+
+}
+
+/*    FIND GYM   */
+
+.findgym {
+    width: 100%;
+    height: 400px;
+    background-color: #f16875; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: white;
+}
+.findgym  img{
+    max-height: 450px;
+    display: block;
+
+}
+.findgym .find-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+        gap: 20px;
+
+}
+.findgym .find-left  h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.findgym .find-left  p .btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+/* --- 3. FOOTER SECTION --- */
+footer {
+    width: 100%;
+    background-color: #384853;
+    padding: 60px 0 40px 0;
+    color: #ffffff;
+}
+
+footer .container.footer {
+    display: flex   ;
+    flex-direction: row   ;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+footer a {
+    font-family: 'Open Sans', sans-serif;
+    color: #b0bec5; /* Light Slate Blue Link Color */
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Footer Pink Logo Badge */
+.footer-logo-btn {
+    background-color: #f16875;
+    color: #ffffff;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-top: 15px;
+    display: inline-block;
+    width: fit-content;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+.social-links img{
+    height: 20px;
+    width: 20px;
+}
