@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="/web dev/final project/style.css">
+
+</head>
+<body>
+
+    <h1 class="top">User Registration Form</h1>
+
+    <form>
+
+        <label>First Name:</label>
+        <input type="text" id="fname" placeholder="Enter first name" required>
+        <br><br>
+
+        <label>Second Name:</label>
+        <input type="text" id="sname" placeholder="Enter last name" required>
+        <br><br>
+
+        <label>Age:</label>
+        <input type="text" id="age" placeholder="Enter Your Age " required>
+        <br><br>
+
+        <label>Salary:</label>
+        <input type="text" id="salery" placeholder="PK ">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" required>
+        Male
+        <input type="radio" name="gender" value="female" required>
+        Female
+        <input type="radio" name="gender" value="other" required>
+        Other
+        <br><br>
+
+        <span>Select Your City</span>
+
+<select name="city" required>
+    <option value="">Select Your City</option>
+    <option value="Gilgit">Gilgit</option>
+    <option value="Hunza">Hunza</option>
+    <option value="Skardu">Skardu</option>
+    <option value="Islamabad">Islamabad</option>
+    <option value="Lahore">Lahore</option>
+    <option value="Karachi">Karachi</option>
+    <option value="Peshawar">Peshawar</option>
+    <option value="Faisalabad">Faisalabad</option>
+    <option value="Multan">Multan</option>
+    <option value="Quetta">Quetta</option>
+    <option value="Bahawalpur">Bahawalpur</option>
+</select>
+
+<br><br>
+
+            <label>CNIC Number:</label>
+            <input type="CNIC" id="CNIC" placeholder="Enter your CNIC Number" required>
+            <br><br>
+
+            <label required>Hobbies:</label>
+            <br>
+            <input type="checkbox" name="hobbies" value="Coding"  id="chekbox">
+            Coding
+            <input type="checkbox" name="hobbies" value="Reading" id="chekbox">
+            Reading
+            <input type="checkbox" name="hobbies" value="Scrolling" id="chekbox">
+            Scrolling
+            <input type="checkbox" name="hobbies" value="Driving" id="chekbox">
+            Driving
+            <br><br>
+
+
+
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset"  id="reset">Reset</button>
+    </form>
+
+    <script src="/web dev/final project/script.js"></script>
+
+</body>
+</html>

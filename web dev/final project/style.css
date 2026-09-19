@@ -1,0 +1,73 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        
+    }
+    
+    
+    body {
+        font-family: Arial, sans-serif;
+        height: 50vh;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 250px;
+        gap: 30px;
+    }
+  
+   
+
+    h1 {
+        text-align: center;
+        color: green;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    form {
+        width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    select {
+        height: 40px;
+    }
+
+    #chekbox
+  {
+        margin-left: 10px;
+    }
+
+    button {
+        padding: 8px 15px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    #submit {
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #reset {
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
